@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full w-full p-14">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>Chat Bot</title>
+  </head>
+  <body class="bg-cream h-full flex justify-center">
+    <div
+      id="inner-container"
+      class="flex justify-center flex-1 flex-col items-baseline h-full max-w-xl gap-4"
+    >
+      <div
+        id="chatOutput"
+        class="flex-1 w-full flex flex-col-reverse gap-4 overflow-y-scroll overflow-y:hidden no-scrollbar"
+      >
+    </div>
+      <form id="chatForm" class="self-end w-full flex gap-3">
+        <input
+          type="text"
+          id="userInput"
+          name="userInput"
+          class="placeholder:text-slate-500 border-darkTextSecondary rounded-md bg-transparent border-[1px] px-5 py-2 flex-1 focus:border-darkTextPrimary focus:outline-none focus:ring-0"
+          placeholder="Enter a Message!"
+        />
+        <button type="submit">Submit</button>
+      </form>
+      <div id="personalityOptions" class="flex justify-between items-center w-full gap-8">
+        <button id="cowboyButton" class="border-darkTextSecondary hover:bg-forestGreen border-[1px] px-3 py-2 rounded-full flex-1 bg-forestGreen text-white">Cowboy</button>
+        <button id="astronautButton" class="border-darkTextSecondary hover:bg-forestGreen border-[1px] px-3 py-2 rounded-full flex-1">Astronaut</button>
+        <button id="gangsterButton" class="border-darkTextSecondary hover:bg-forestGreen border-[1px] px-3 py-2 rounded-full flex-1">20's Gangster</button>
+      </button>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
